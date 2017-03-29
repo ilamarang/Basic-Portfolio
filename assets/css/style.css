@@ -103,7 +103,7 @@ nav li a {
 #portfolio_content {
 
 	margin-top: 0;
-	height: 700px;
+	height: 600px;
 	background-image: url("../images/cork-wallet.png");
 	border-top:5px solid #D3D3D3;
 	
@@ -131,9 +131,9 @@ section h1 {
 #portfolio {
 	
 	width: 500px;
-	height: 600px;
+	height: 550px;
 	margin-top:20px;
-	margin-bottom: 20px;
+	
 	padding:5px;
 
 }
@@ -142,6 +142,7 @@ section hr {
 	
 	width: 100%;
 	color: grey;
+
 
 }
 
@@ -301,18 +302,43 @@ ul.social_media {
 /* PORTFOLIO */
 /****************************************************/
 
+#work {
+	margin:0;
+}
+
+#work h1 {
+
+	margin-left: 20px;
+}
+
+#work hr {
+	
+	margin-left:20px;
+	width:450px;
+
+	}
+
+#work-thumbs  {
+	
+	list-style: none; 
+	margin: 20px;
+	padding-left:0;
+}
+
 #work #work-thumbs li {
 	
 	list-style:none;
 	float:left;
 	position: relative;
-	margin: 5px;
+	margin-right: 10px;
+	padding:0;
 
 }
 
+
 #work #work-thumbs li img {
 	
-	width:190px;
+	width:220px;
 	height: 150px;
 
 }
