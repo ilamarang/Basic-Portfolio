@@ -317,7 +317,10 @@ ul.social_media {
 /* FOOTER */
 /****************************************************/
 
-
+.wrapper {
+	min-height: 100%;
+	position: relative;
+}
 
 .footer{
 	height: 60px;  /* .push must be the same height as .footer */
