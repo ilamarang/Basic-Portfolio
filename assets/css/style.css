@@ -243,7 +243,7 @@ ul.social_media {
 #connect #form {
 	
 	width:600px;
-	
+	color: grey;
 }
 
 #connect #form span {
@@ -252,6 +252,11 @@ ul.social_media {
 	padding-top:5px;
 	
 }
+#connect_hr {
+	width: 600px;
+	margin:0;
+	color: grey;
+}
 
 #connect #form input {
 	
@@ -259,6 +264,7 @@ ul.social_media {
 	border:0px;
 	padding-top:20px;
 	margin-bottom:10px;
+
 
 }
 
@@ -294,7 +300,10 @@ ul.social_media {
 	height:30px;
 	padding:0px 0px 5px 0px;
 	margin:10px 16px 0px 0px;
+	font-size: 1em;
 	background-color: teal;
+	color: white;
+	text-align: center;
 	
 }
 
