@@ -6,12 +6,14 @@ html , body {
 
 	height: 100%;
 	margin: 0;
+	position:relative;
 }
 
 body {
 	
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	padding-bottom:60px;
+	
+	margin: 0 0 60px; /* bottom = footer height */
 	background-image: url("../images/cork-wallet.png");
 
 }
@@ -21,7 +23,7 @@ body {
 
 .header_container {
 	background-color: white;
-
+	
 }
 
 header {
@@ -41,6 +43,9 @@ header h3 {
 	padding-top: 20px;
 	background-color: #4aaaa5;
 	text-align: center;
+	color: white;
+	padding: 15px;
+	padding-top:15px;
 
 }
 
@@ -48,6 +53,9 @@ header h3 {
 nav {
 
 	float: right;
+	padding-top:10px;
+	margin-right: 0;
+
 	
 }
 
@@ -55,9 +63,29 @@ nav li {
 	
 	float:left;
 	list-style:none;
-	margin-left:27px;
+	margin-left:10px;
+
 
 }
+nav li a {
+
+	text-decoration: none;
+
+}
+
+#main_menu li + li:before {
+    content: " | ";
+}
+
+#main_menu li:hover a, #main_menu li.active a, #main_menu li.active span
+	{
+		background: rgba(0,0,0,0.5);
+		border-radius: 20px;
+		color: rgba(255,255,255,0.8);
+
+	}
+	
+	
 
 /****************************************************/
 /* MAIN CONTENT */
@@ -67,7 +95,7 @@ nav li {
 
 	margin-top: 0;
 	height: 600px;
-	
+	border-top:5px solid #D3D3D3;
 	
 }
 
@@ -76,6 +104,7 @@ nav li {
 	margin-top: 0;
 	height: 700px;
 	background-image: url("../images/cork-wallet.png");
+	border-top:5px solid #D3D3D3;
 	
 }
 
@@ -152,15 +181,26 @@ aside hr {
 	
 	list-style:none;
 	float:left;
+	margin:0;
+	padding:0;
+	list-style-position:inside;
+
+}
+
+ul.social_media {
+
+	margin:0;
+	padding:0;
+	padding-top:10px;
 }
 
 .social_media li a {
 	
 	display:block;
 	text-indent:-9999px;
-	width:40px; 
+	width:50px; 
 	height:40px;
-	margin-right:10px;
+	margin-right:15px;
 }
 
 .social_media li a.github { 
@@ -277,10 +317,7 @@ aside hr {
 /* FOOTER */
 /****************************************************/
 
-.wrapper {
-	min-height: 100%;
-	position: relative;
-}
+
 
 .footer{
 	height: 60px;  /* .push must be the same height as .footer */
@@ -291,6 +328,7 @@ aside hr {
 	position:absolute;
 	bottom:0;
 	width:100%;
+	border-top:10px solid teal;
 
 }
 
